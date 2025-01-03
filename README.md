@@ -8,7 +8,6 @@ Welcome to my personal portfolio website! This project showcases my professional
 - [Technologies Used](#technologies-used)
 - [How to Access](#how-to-access)
 - [Sections Overview](#sections-overview)
-- [Contact](#contact)
 - [License](#license)
 
 ## About
@@ -40,11 +39,6 @@ The webpage can be accessed by navigating to this [URL](https://devbot6.github.i
 4. **Skills**: Categorized technical and soft skills that I bring to the table.
 6. **Contact**: Links to connect with me or download my resume.
 
-## Contact
-Feel free to reach out to me via:
-- **LinkedIn**: [Your LinkedIn Profile](linkedin.com/in/devon-hulse-488ba9280)
-- **Email**: [Your Email Address](devhulse04@icloud.com)
-- **Resume**: [Download Resume](file:///C:/Users/devhu/Desktop/Resume/Resumes/DHResumeFull.pdf)
 
 ## License
 This portfolio website is for personal use and educational purposes. Please contact me if you'd like to use any elements or designs.
