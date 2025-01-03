@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="min-h-screen bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-white shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4">
+      <ul class="flex space-x-6 justify-end">
+        <li><a href="#intro" class="text-gray-600 hover:text-gray-900">About</a></li>
+        <li><a href="#experience" class="text-gray-600 hover:text-gray-900">Experience</a></li>
+        <li><a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a></li>
+        <li><a href="#skills" class="text-gray-600 hover:text-gray-900">Skills</a></li>
+        <!-- <li><a href="#interests" class="text-gray-600 hover:text-gray-900">Interests</a></li> -->
+        <li><a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Intro Section -->
+  <section id="intro" class="pt-24 pb-16 px-4">
+    <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-8">
+      <h1 class="text-4xl font-bold mb-4">Hello, I'm Devon Hulse</h1>
+      <p class="text-xl text-gray-600 mb-6">
+        I am a Computer Science, Machine Learning Focused, Undergraduate Student at Mercer University with a Minor in Mechatronics Engineering and 
+        Mathematics. I have always been deeply fascinated by robotics and engineering. I've interned at the Robins Air Force Base these past 2 summers
+        (summer 2023,2024) as well as complete a numerous amount of personal projects for you to check out.
+      </p>
+      <a href="#contact" class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+        Get in touch
+      </a>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section id="experience" class="py-16 px-4 bg-gray-100">
+    <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-8">
+      <h2 class="text-3xl font-bold mb-8">Work Experience</h2>
+      <div class="space-y-8">
+        <div class="border-l-4 border-blue-600 pl-4">
+          <h3 class="text-xl font-semibold">402nd Software Engineering Group</h3>
+          <p class="text-gray-600">Computer Scientist Intern • Summer 23' 24'</p>
+          <p class="mt-2">Summer 23' : I developed a research paper on Machine Learning: Types of Learning and presented it to a panel of 22 people using Microsoft PowerPoint. Through this experience, I honed skills in Python, Machine Learning concepts, terminal navigation, Raspberry Pi, and GitHub. Additionally, I gained experience as a Scrum Master, leading a team of four in developing a video game using tools like OneDev and GitHub. Alongside technical skills, I cultivated strong communication abilities, including public speaking, small talk, etiquette, and interviewing techniques.
+            Summer 24' : Implemented code on a Raspberry Pi to control LEDs and buzzers, and created Python projects including Simon Says, Battleship, and a flare dispenser simulator. Computer Vision and Smart Car: Used a self-made dataset in Roboflow to implement computer vision in a smart car for identifying and classifying colored balls. </p>
+        </div>
+        <div class="border-l-4 border-blue-600 pl-4">
+            <h3 class="text-xl font-semibold">Kennesaw State University</h3>
+            <p class="text-gray-600">Machine Learning Researcher • Fall 23' Spring 24'</p>
+            <p class="mt-2">I am conducting a Machine Learning project titled "Using Artificial Intelligence to Detect Debris in the Road," along with my two partner Arya Shah and Joshua Daniel under the sponser of Dr. Sathish Kumar Gurupatham, focusing on creating datasets, wrangling and cleaning data, and developing training/validation data for supervised and deep learning models. We were given 3000$ for funding of the project and a $2000 stipend. We collected and augmented a dataset of thermal images of road debris using a high-grade thermal camera. We trained three CNN models—VGG-16, InceptionResNetV2, and MobileNetV2—using transfer learning and evaluated their performance through experimentation on Google Colab. </p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 px-4">
+    <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-8">
+      <h2 class="text-3xl font-bold mb-8">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">NeuroScan AI</h3>
+          <p class="text-gray-600 mb-4">Developed a deep learning-based web application for brain tumor classification using Python, TensorFlow, and Flask. The application allows users to upload MRI scans and classifies them into one of four categories: No Tumor, Pituitary Tumor, Glioma Tumor, or Meningioma Tumor, providing predictions with confidence scores. Designed and trained a Convolutional Neural Network (CNN) using the model MobileNetV2 to achieve high accuracy in tumor detection. Built a user-friendly interface using HTML and integrated it with the Flask back-end for seamless image upload and processing.</p>
+          <div class="flex gap-2">
+            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">TensorFlow, Keras, Flask, CNN, Python</span>
+          </div>
+        </div>
+        <div class="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-semibold mb-2">Document Q&A Chatbot</h3>
+            <p class="text-gray-600 mb-4">This project provides a chatbot application that allows users to input their own documents for interaction. The chatbot processes the document to retrieve relevant context and answer user queries based on the content. Using advanced document loading, semantic chunking, and vector search techniques, the chatbot efficiently provides context-aware responses. Users can simply upload their document and engage with the chatbot to ask questions, with the system generating relevant and concise answers. The app is powered by LangChain, HuggingFace embeddings, and FAISS for document processing and retrieval.</p>
+            <div class="flex gap-2">
+              <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">Ollama, Langchain, Gradio, RAG, HuggingFace, FAISS</span>
+            </div>
+          </div>
+          <div class="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-semibold mb-2">Tesla Stock Price Predictor</h3>
+            <p class="text-gray-600 mb-4">Developed a PyTorch-based LSTM model to predict stock prices using historical trade, bar, and quote data from the Alpaca Markets API. Data preprocessing included cleaning with Pandas and feature normalization using MinMaxScaler. The model, trained and evaluated with MSE as the loss function, was deployed via a Flask web app with REST API support. Visualizations compared predicted vs. actual stock prices.</p>
+            <div class="flex gap-2">
+              <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">LSTM, API, Pytorch</span>
+            </div>
+          </div>
+          <div class="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-semibold mb-2">Graph Database for Chinese Characters</h3>
+            <p class="text-gray-600 mb-4">Developed a graph database using Neo4j to represent Chinese characters, radicals, and lessons, enhancing data visualization over traditional SQL. Automated Cypher query generation and data insertion with a Python script, creating nodes and relationships for efficient querying and exploration.</p>
+            <div class="flex gap-2">
+              <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">SQL, Neo4j, Python</span>
+            </div>
+          </div>
+          <div class="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-semibold mb-2">Fake News Prediction</h3>
+            <p class="text-gray-600 mb-4">Built a machine learning model using scikit-learn to classify news articles as fake or real, trained on 20,000+ labeled samples. Preprocessed text data with stemming, vectorization, and handling missing values. Optimized logistic regression hyperparameters via grid search and evaluated performance with accuracy, ROC-AUC, and confusion matrix. Visualized results with Matplotlib and Seaborn, including a Word Cloud of frequent terms.</p>
+            <div class="flex gap-2">
+              <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">scikit-learn, Logistic Regression, Matplotlib, Seaborn</span>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 px-4 bg-gray-100">
+    <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-8">
+      <h2 class="text-3xl font-bold mb-8">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Programming Languages</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+              Python
+            </li>
+            <li class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+              C++
+            </li>
+            <li class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+              C#
+            </li>
+            <li class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+              Java
+            </li>
+            <li class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+              SQL
+            </li>
+            <li class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+              HTML
+            </li>
+          </ul>
+        </div>
+        <div>
+            <h3 class="text-xl font-semibold mb-4">CAD</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                TinkerCAD
+              </li>
+              <li class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                Onshape
+              </li>
+              <li class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                Inventor
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Tools/Technologies</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                Git
+              </li>
+              <li class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                Google Colab
+              </li>
+              <li class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                Juypter Notebook
+              </li>
+              <li class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                Neo4j
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests
+  <section id="interests" class="py-16 px-4">
+    <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-8">
+      <h2 class="text-3xl font-bold mb-8">Interests</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 bg-gray-50 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Wrestling</h3>
+          <p class="text-gray-600">[Description of your interest]</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">[Interest Category]</h3>
+            <p class="text-gray-600">[Description of your interest]</p>
+          </div>
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">[Interest Category]</h3>
+            <p class="text-gray-600">[Description of your interest]</p>
+          </div>
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">[Interest Category]</h3>
+            <p class="text-gray-600">[Description of your interest]</p>
+          </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-4 bg-gray-100">
+    <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-8">
+      <h2 class="text-3xl font-bold mb-8">Contact</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="space-y-6">
+          <a href="linkedin.com/in/devon-hulse-488ba9280" class="flex items-center gap-3 text-gray-600 hover:text-blue-600">
+            LinkedIn Profile
+          </a>
+          <a href="mailto:devhulse04@icloud.com" class="flex items-center gap-3 text-gray-600 hover:text-blue-600">
+            devhulse04@icloud.com
+          </a>
+          <div class="flex items-center gap-3 text-gray-600">
+            478-213-7540
+          </div>
+          <a href="file:///C:/Users/devhu/Desktop/Resume/Resumes/DHResumeFull.pdf" class="flex items-center gap-3 text-gray-600 hover:text-blue-600">
+            Download Resume
+          </a>
+        </div>
+        <div>
+          <p class="text-gray-600 mb-4">
+            Feel free to reach out to me through any of these channels.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
